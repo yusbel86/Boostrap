@@ -4,24 +4,17 @@ import React from "react";
 import rigoImage from "../../img/rigo-baby.jpg";
 
 import { Navbar } from "./navbar";
+import { Card } from "./card";
 //create your first component
 export function Home() {
 	return (
 		<div className="text-center mt-5">
-			<h1>Hello Rigo!</h1>
-			<p>
-				<img src={rigoImage} />
-			</p>
-			<a href="#" className="btn btn-success">
-				If you see this green button... bootstrap is working
-			</a>
-			<p>
-				Made by{" "}
-				<a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
-				love!
-			</p>
-
 			<Navbar />
+			<div className="d-flex justify-content-start">
+				<Card Url="http://www.marca.com" title="Marca" />
+				<Card Url="http://www.google.com" title="Google" />
+				<Card />
+			</div>
 		</div>
 	);
 }
