@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 //create your first component
 export function Card(props) {
 	return (
-		<div className="card text-center mx-5" style={{ width: "280px" }}>
+		<div className="card text-center" style={{ width: "235px" }}>
 			<div className="card-body">
 				<h5 className="card-title">{props.title}</h5>
 				<p className="card-text">
